@@ -233,7 +233,7 @@
     "@storybook/addon-essentials": "^7.6.13",
     "@storybook/addon-links": "^7.6.13",
     "@storybook/addon-mdx-gfm": "^7.6.15",
-    "@storybook/addons": "^7.6.13",
+    "@storybook/addons": "^7.6.17",
     "@storybook/client-api": "^7.6.13",
     "@storybook/components": "^7.6.13",
     "@storybook/react": "^7.6.13",
