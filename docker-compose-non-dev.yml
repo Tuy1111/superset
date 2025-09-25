@@ -63,6 +63,7 @@ services:
       - ./docker/pythonpath_dev/superset_config_docker.py:/app/pythonpath/superset_config_docker.py
       - ./superset/templates:/app/superset/templates
       - ./superset/static/assets/images:/app/superset/static/assets/images
+      - ./jwt:/etc/superset/jwt
     environment:
       - SUPERSET_CONFIG_PATH=/app/pythonpath/superset_config_docker.py
       - PYTHONPATH=/app/pythonpath

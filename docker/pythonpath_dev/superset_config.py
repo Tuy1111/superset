@@ -113,3 +113,42 @@ try:
     )
 except ImportError:
     logger.info("Using default Docker config...")
+# from keycloak_security_manager import OIDCSecurityManager
+# from flask_appbuilder.security.manager import AUTH_OID, AUTH_REMOTE_USER, AUTH_DB, AUTH_LDAP, AUTH_OAUTH
+# import os
+
+# AUTH_TYPE = AUTH_OID
+# SECRET_KEY: 'tuy123'
+# OIDC_CLIENT_SECRETS =  '/path/to/client_secret.json'
+# OIDC_ID_TOKEN_COOKIE_SECURE = False
+# OIDC_OPENID_REALM: 'jmix-realm'
+# OIDC_INTROSPECTION_AUTH_METHOD: 'client_secret_post'
+# CUSTOM_SECURITY_MANAGER = OIDCSecurityManager
+
+# # Will allow user self registration, allowing to create Flask users from Authorized User
+# AUTH_USER_REGISTRATION = True
+
+# # The default user self registration role
+# AUTH_USER_REGISTRATION_ROLE = 'Public'
+# AUTH_ROLES_MAPPING = {
+# "superset_users": ["Gamma","Alpha"],
+# "superset_admins": ["Admin"],
+# }
+# from flask import session
+# from flask import Flask
+
+
+# def make_session_permanent():
+#     '''
+#     Enable maxAge for the cookie 'session'
+#     '''
+#     session.permanent = True
+
+# # Set up max age of session to 24 hours
+# PERMANENT_SESSION_LIFETIME = timedelta(hours=24)
+# def FLASK_APP_MUTATOR(app: Flask) -> None:
+#     app.before_request_funcs.setdefault(None, []).append(make_session_permanent)
+    
+# FEATURE_FLAGS = {
+#     'PRESTO_EXPAND_DATA': False,
+# }    
