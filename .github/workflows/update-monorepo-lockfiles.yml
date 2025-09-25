@@ -30,7 +30,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.ref || github.head_ref }} # Checkout the branch that made the PR or the comment's PR branch
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: '16'
 
