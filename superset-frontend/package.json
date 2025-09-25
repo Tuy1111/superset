@@ -226,7 +226,7 @@
     "@cypress/react": "^5.10.0",
     "@emotion/jest": "^11.3.0",
     "@hot-loader/react-dom": "^16.13.0",
-    "@istanbuljs/nyc-config-typescript": "^1.0.1",
+    "@istanbuljs/nyc-config-typescript": "^1.0.2",
     "@storybook/addon-actions": "^7.6.13",
     "@storybook/addon-controls": "^7.6.13",
     "@storybook/addon-docs": "^7.6.13",
