@@ -68,7 +68,7 @@ jobs:
         run: ./scripts/ci_check_no_file_changes.sh python
       - name: Setup Python
         if: steps.check.outcome == 'failure'
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python-version }}
           cache: "pip"
@@ -147,7 +147,7 @@ jobs:
         run: docker compose -f scripts/databases/hive/docker-compose.yml up -d
       - name: Setup Python
         if: steps.check.outcome == 'failure'
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python-version }}
           cache: "pip"
